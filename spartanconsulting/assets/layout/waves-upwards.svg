@@ -1,0 +1,19 @@
+<svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+  x="0px"
+  y="0px"
+  viewBox="0 0 1920 159.2"
+  style="overflow: auto; enable-background: new 0 0 1920 159.2"
+  xml:space="preserve"
+>
+  <defs></defs>
+  <path
+    class="footer-svg"
+    d="M0,18.2L45.7,12c45.6-6.1,137-18.5,228.5-7.8S457.3,48.5,548.8,57S731.7,48.9,823,41.2s182.7-6.3,274-3.2
+	c91.3,3.2,182.7,8.2,274.2,9c91.5,0.9,183.1-2.5,274.6-7.3s182.9-11.2,228.5-14.3l45.7-3.2v137h-45.7c-45.6,0-137,0-228.5,0
+	s-183.1,0-274.6,0s-182.9,0-274.2,0s-182.7,0-274,0s-182.7,0-274.2,0s-183.1,0-274.6,0s-182.9,0-228.5,0H0V18.2z"
+  />
+</svg>
