@@ -11,26 +11,8 @@
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
   RewriteRule ^.*$ - [NC,L]
   # Redirect all non-file routes to index.html
-  RewriteRule ^(?!.*\.).*$ index.html [NC,L]
+  RewriteRule ^(?!.*\.).*$  /fitness-calculator/index.html [NC,L]
 </IfModule>
-
-<VirtualHost *:80>
-    ServerName fitness-calculator
-
-    DocumentRoot /fitness-calculator
-
-    <Directory /fitness-calculator>
-        RewriteEngine on
-
-        # Don't rewrite files or directories
-        RewriteCond %{REQUEST_FILENAME} -f [OR]
-        RewriteCond %{REQUEST_FILENAME} -d
-        RewriteRule ^ - [L]
-
-        # Rewrite everything else to index.html to allow html5 state links
-        RewriteRule ^ /fitness-calculator/index.html [L]
-    </Directory>
-</VirtualHost>
 
 # Disable browser caching for all files that don't get a hash string by Angular.
 <FilesMatch "^(?!.*\.([0-9a-z]{20})\.).*$">
