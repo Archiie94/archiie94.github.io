@@ -1,0 +1,12 @@
+{
+  "app_name": "Baby tracker",
+
+  "start_page": {
+    "title": "Välkommen till baby tracker",
+    "subtitle": "Håll koll på dina barns utveckling och rutiner.",
+    "actions": {
+      "sign_in": "Logga in",
+      "register": "Registrering"
+    }
+  }
+}

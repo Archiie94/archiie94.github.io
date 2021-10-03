@@ -1,0 +1,228 @@
+{
+  "email": "E-mail",
+  "password": "Password",
+  "app_name": "Baby tracker",
+  "child_name": "Child name",
+  "child_dob": "Child - date of birth",
+  "date": "Date",
+  "left": "Left",
+  "right": "Right",
+  "min": "min",
+  "h": "h",
+  "sec": "sec",
+  "add": "Add",
+  "left_side": "Left side",
+  "right_side": "Right side",
+  "amount": "Amount",
+  "and": "and",
+  "time": "Time",
+  "sleep": "Sleep",
+  "inprogress": "In progress",
+  "dob": "Date of birth",
+  "length": "Length",
+  "subject": "Subject",
+  "message": "Message",
+
+  "day": "Day",
+  "days": "Days",
+  "year": "Year",
+  "years": "Years",
+  "month": "Month",
+  "months": "Months",
+  "today": "Today",
+  "yesterday": "Yesterday",
+  "previous_day": "Previous day",
+  "next_day": "Next day",
+
+  "weight": "Weight",
+  "height": "Height",
+  "headCirc": "Head circumference",
+
+  "diapers": "Diapers",
+  "measure": "Measure",
+  "food": "Food",
+  "progress": "Progress",
+
+  "food_type": {
+    "supplement": "Supplement",
+    "substitution": "Substitution",
+    "pump": "Pump",
+    "breast_feed": "Breast feed"
+  },
+
+  "dialog": {
+    "create": "Create",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close"
+  },
+
+  "start_page": {
+    "title": "Welcome to baby tracker",
+    "subtitle": "Keep track on your childrens development and routines.",
+    "actions": {
+      "sign_in": "Sign in",
+      "register": "Register"
+    }
+  },
+  "sign_in_page": {
+    "title": "Sign in",
+    "or_sign_in_with": "Or sign in with",
+    "no_account_yet": "Don't have an account yet?",
+    "sign_up": "Sign up"
+  },
+  "register_page": {
+    "title": "Sign up",
+    "or_register_in_with": "Or sign up with",
+    "already_member": "Already have an account?",
+    "sign_in": "Sign in"
+  },
+  "profile_page": {
+    "title": "My profile",
+    "add_cover": "Add cover image",
+    "add_profile": "Add profile image",
+    "change_profile_picture": "Change profile picture",
+    "remove_profile_picture": "Remove profile picture",
+    "edit_child_details": "Edit child details",
+    "delete_child": "Delete child",
+    "add_child": "Add child",
+    "hello": "Hello",
+    "no_activity": "There is no registered activity today"
+  },
+  "achievement_page": {
+    "results_text": "achievement(s)",
+    "title": "{{name}}'s achievements",
+    "modal": {
+      "add_title": "Add achievement",
+      "edit_title": "Edit achievement",
+      "achievement": "Achievement"
+    }
+  },
+  "achievement": {
+    "first_tooth": "First tooth",
+    "first_step": "First step",
+    "first_sound": "First sound",
+    "first_word": "First word",
+    "first_smile": "First smile",
+    "first_laughter": "First laughter",
+    "first_crawling": "First crawling"
+  },
+  "food_page": {
+    "title": "Food habits"
+  },
+  "food_detail_page": {
+    "amount": "Amount",
+    "type": {
+      "supplement": "Supplement",
+      "substitution": "Substitution",
+      "pump": "Pump"
+    },
+    "modal": {
+      "delete": {
+        "title": "Delete food session",
+        "content": "Do you really want to delete the food session?",
+        "toastr": "Food session deleted"
+      },
+      "supplement": {
+        "add_title": "Add supplement",
+        "edit_title": "Edit supplement",
+        "create_toastr": "Supplement added",
+        "edit_toastr": "Supplement updated"
+      },
+      "substitution": {
+        "add_title": "Add substitution",
+        "edit_title": "Edit substitution",
+        "create_toastr": "Substitution added",
+        "edit_toastr": "Substitution updated"
+      },
+      "pump": {
+        "add_title": "Add pump",
+        "edit_title": "Edit pump",
+        "create_toastr": "Pump added",
+        "edit_toastr": "Pump updated"
+      }
+    }
+  },
+  "breast_feed_page": {
+    "title": "Breast feed",
+    "duration": "Duration",
+    "empty_list": "There are no breast feed sessions added",
+    "tooltip": {
+      "edit": "Edit breast feed session",
+      "delete": "Delete breast feed session",
+      "create": "Create breast feed session"
+    },
+    "breast_feed_modal": {
+      "create_title": "Add breast feed session",
+      "edit_title": "Edit breast feed session",
+      "create_success": "Breast feed session added",
+      "edit_success": "Breast feed session updated",
+      "deleted": "Breast feed session removed",
+      "delete_title": "Delete breast feed session",
+      "delete_content": "Do you really want to delete the breast feed session?"
+    }
+  },
+  "supplement": {
+    "porridge": "Porridge",
+    "fruit": "Fruit",
+    "juice": "Juice",
+    "meat": "Meat",
+    "milk": "Milk",
+    "vegetables": "Vegetables",
+    "vitamins": "Vitamins",
+    "water": "Water"
+  },
+
+  "measurement_page": {
+    "type": {
+      "weight": "weight",
+      "height": "height",
+      "headCirc": "head circumference"
+    },
+    "modal": {
+      "edit_title": "Edit {{type}}",
+      "add_title": "Add {{type}}",
+      "edit_toastr": "{{type}} updated",
+      "create_toastr": "{{type}} created"
+    }
+  },
+
+  "sleep_page": {
+    "slept": "Slept - {{time}}",
+    "modal": {
+      "edit_title": "Edit sleep",
+      "add_title": "Add sleep",
+      "edit_toastr": "Sleep updated",
+      "create_toastr": "Sleep created"
+    }
+  },
+
+  "diaper_page": {
+    "diaper": "Diaper",
+    "type": {
+      "wet": "Wet",
+      "dry": "Dry",
+      "mixed": "Mixed"
+    },
+    "modal": {
+      "edit_title": "Edit diaper change",
+      "add_title": "Add diaper change",
+      "edit_toastr": "Diaper change updated",
+      "create_toastr": "Diaper change created"
+    }
+  },
+
+  "add_child_page": {
+    "title": "Add child",
+    "edit_title": "Edit child",
+    "create_child": "Create child",
+    "toastr": "Child created"
+  },
+
+  "contact_page": {
+    "title": "Contact",
+    "success": "E-mail has been sent",
+    "success_content": "E-mail successfully sent. We will get back to you as soon as possible."
+  }
+}
