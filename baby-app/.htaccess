@@ -1,18 +1,17 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   
-  # Redirection to HTTPS:
-  RewriteCond %{HTTPS} !on
-  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-  
-  RewriteEngine On
   # If an existing asset or directory is requested go to it as it is
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
   RewriteRule ^ - [L]
 
   # If the requested resource doesn't exist, use index.html
-  RewriteRule ^ baby-app/index.html
+  RewriteRule ^ index.html
+
+  # Redirection to HTTPS:
+  RewriteCond %{HTTPS} !on
+  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 </IfModule>
 
 # Disable browser caching for all files that don't get a hash string by Angular.
