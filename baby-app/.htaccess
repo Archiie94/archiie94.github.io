@@ -5,14 +5,14 @@
   RewriteCond %{HTTPS} !on
   RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
   
-  # Don't rewrite files or directories
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
-  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteEngine On
+  # If an existing asset or directory is requested go to it as it is
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
   RewriteRule ^ - [L]
 
-  # Rewrite everything else to index.html
-  # to allow html5 state links
-  RewriteRule ^ index.html [L]
+  # If the requested resource doesn't exist, use index.html
+  RewriteRule ^ ./baby-app/index.html
 </IfModule>
 
 # Disable browser caching for all files that don't get a hash string by Angular.
