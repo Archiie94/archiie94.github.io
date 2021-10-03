@@ -5,37 +5,14 @@
   RewriteCond %{HTTPS} !on
   RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
   
-  # Disables content negotiation (choosing the right file in ambiguous cases)
-  Options -Multiviews
-
-  # Enable rewriting rules
-  RewriteEngine on
-
-  # CASE 1: FILES 
-  # =============
-
-  # The next three lines define 3 options (ORed, that is, only true)
-  # Is a regular file, OR
-  RewriteCond %{REQUEST_FILENAME} -s [OR]
-  # Is a symbolic link, OR
-  RewriteCond %{REQUEST_FILENAME} -l [OR]
-  # Is a directory
+  # Don't rewrite files or directories
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
-  # If any of the above are true, rewrite:
-  # ^ = start of line; .* = match any character, 0 or more times; $ = end of line
-  # - = no substitution
-  # NC = no case matching
-  # L = do not match any more rules
-  RewriteRule ^.*$ - [NC,L]
+  RewriteRule ^ - [L]
 
-  # CASE 2: Subpaths (SPA)
-  # ======================
-
-  # ^ = start of line; () = matching group; .* = match any character, 0 or more times
-  # Rewrite everything to /index.html
-  # NC = no case matching
-  # L = do not match any more rules
-  RewriteRule ^(.*) /baby-app/index.html [NC,L]
+  # Rewrite everything else to index.html
+  # to allow html5 state links
+  RewriteRule ^ index.html [L]
 </IfModule>
 
 # Disable browser caching for all files that don't get a hash string by Angular.
