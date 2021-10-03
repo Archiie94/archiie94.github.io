@@ -12,7 +12,7 @@
   RewriteRule ^ - [L]
 
   # If the requested resource doesn't exist, use index.html
-  RewriteRule ^ ./baby-app/index.html
+  RewriteRule ^ baby-app/index.html
 </IfModule>
 
 # Disable browser caching for all files that don't get a hash string by Angular.
